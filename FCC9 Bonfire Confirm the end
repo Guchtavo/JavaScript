@@ -1,0 +1,15 @@
+function end(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  if (str.substr(-target.length) == (target)) {
+    
+    return true; 
+  } else {
+    return false;
+  }
+  
+  //str.substr(str.length - target.length, target.length);
+  //return str.substr(-target.length) == (target) ? true : false;
+}
+
+end('Bastian', 'n');
