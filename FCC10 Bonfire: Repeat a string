@@ -1,0 +1,34 @@
+//repeat string version 1
+
+function repeat(str, num) {
+  
+if (num  < 0) {
+    return str;
+  } else {
+    console.log(str.repeat(num));
+  }
+  
+  return str;
+}
+
+
+
+repeat('abc', 3);
+
+//version 2
+
+function repeat(str, num) {
+  
+  var resultStr = '';
+  
+  if (num < 0){
+  return resultStr;
+  }
+
+  for (var i= 0; i < num; i++) {
+    resultStr += str;
+  }
+  return resultStr;
+}
+
+repeat('abc', 3);
