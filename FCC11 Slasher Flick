@@ -1,0 +1,12 @@
+function slasher(array, howMany) {
+  // it doesn't always pay to be first
+  if(array.length <= howMany) {
+    return[]
+    
+  } else if (howMany < 1) {
+    return array;
+  } 
+  return array.slice(howMany);
+}
+
+slasher([1, 2, 3], 2);
